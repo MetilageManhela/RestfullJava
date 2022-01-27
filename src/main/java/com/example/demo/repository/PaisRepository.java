@@ -11,5 +11,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author Metila
  */
-public interface PaisRepository extends JpaRepository<Pais, Long> { }
+public interface PaisRepository extends JpaRepository<Pais, Long> {}
    

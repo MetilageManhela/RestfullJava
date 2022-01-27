@@ -1,6 +1,5 @@
 
 package com.example.demo.entity;
-
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,8 +13,6 @@ public class Pessoa implements Serializable
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
-    //@Column(nullable = false)
     private String nome;
 
     public long getId() {
