@@ -66,6 +66,10 @@ public class PessoaController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+
+
+     
+
     @RequestMapping(value = "/pessoa/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Object> Delete(@PathVariable(value = "id") long id)
      {

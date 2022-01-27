@@ -51,7 +51,7 @@ public class PaisController {
         Optional<Pais> oldPais = _paisRepository.findById(id);
         if(oldPais.isPresent()){
             Pais pais = oldPais.get();
-            pais.setNome(newPais.getNome());
+            pais.setNome(newPais.get());
             _paisRepository.save(pais);
             return new ResponseEntity<Pais>(pais, HttpStatus.OK);
         }
@@ -70,4 +70,9 @@ public class PaisController {
         else
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
+
+
+
+@PutMapping("pais/")
+
 }
